@@ -87,7 +87,7 @@ python main.py
 prompt-toolkit/
 ├── README.md
 ├── requirements.txt
-├── .env.example
+├── .env
 ├── main.py                    # Ponto de entrada
 ├── src/
 │   ├── __init__.py
