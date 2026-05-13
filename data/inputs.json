@@ -1,0 +1,72 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente, chegou antes do prazo! Recomendo a todos.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Veio completamente quebrado e o suporte demorou 5 dias para responder. Inadmissível!",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "O produto chegou no prazo mas a embalagem estava amassada. O item está ok.",
+      "esperado": "MISTO"
+    },
+    {
+      "input": "Entrega rápida, produto exatamente como descrito. Muito satisfeito com a compra.",
+      "esperado": "POSITIVO"
+    },
+    {
+      "input": "Fui cobrado duas vezes no cartão. Abri chamado há 3 dias e nenhum retorno.",
+      "esperado": "NEGATIVO"
+    },
+    {
+      "input": "Produto ok para o preço. Nada de especial, mas cumpre o que promete.",
+      "esperado": "NEUTRO"
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Meu notebook Dell comprado há 2 dias parou de ligar. Preciso urgente para trabalhar amanhã de manhã!",
+      "esperado": "Produto: Notebook Dell"
+    },
+    {
+      "input": "A camiseta tamanho M que comprei veio com costura completamente solta no ombro. Quero trocar por uma nova.",
+      "esperado": "Produto: Camiseta M"
+    },
+    {
+      "input": "O fone de ouvido bluetooth que recebi hoje não está pareando com nenhum dispositivo. Tentei resetar e nada.",
+      "esperado": "Produto: Fone de ouvido bluetooth"
+    },
+    {
+      "input": "Comprei um tênis tamanho 42 mas veio o 40. Por favor preciso do tamanho correto o mais rápido possível.",
+      "esperado": "Produto: Tênis tamanho 42"
+    },
+    {
+      "input": "A cafeteira Nespresso parou de funcionar depois de 1 mês de uso. Gostaria de acionar a garantia.",
+      "esperado": "Produto: Cafeteira Nespresso"
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Comprei esse fone de ouvido há três semanas e estou impressionado com a qualidade do som. Os graves são potentes e os agudos bem definidos. A bateria realmente dura as 20 horas prometidas. O único ponto negativo é que as almofadas ficam desconfortáveis após 2 horas de uso contínuo. Para o preço, é uma boa compra.",
+      "esperado": "Fone com excelente qualidade sonora"
+    },
+    {
+      "input": "A entrega foi muito rápida, chegou em 2 dias úteis e embalagem perfeita. Porém o filtro de água não funciona como descrito: o fabricante promete filtrar partículas de até 1 micron mas claramente não filtra isso. Fiz o teste e a água continua com gosto de cloro. Vou devolver.",
+      "esperado": "Entrega rápida"
+    },
+    {
+      "input": "Produto chegou hoje, muito bem embalado. A smart TV tem imagem linda, 4K real, cores vibrantes. O sistema Android TV é rápido e responsivo. Único problema: o controle remoto parece muito frágil, plástico de baixa qualidade. Mas a TV em si é excelente, recomendo muito.",
+      "esperado": "Smart TV com excelente imagem 4K"
+    },
+    {
+      "input": "Comprei a mochila para viagem. A capacidade é boa, cabe tudo que preciso. Porém o zíper do compartimento principal travou depois de apenas 3 usos. Muito frustrante para um produto de R$200. O atendimento foi ágil e já estão enviando uma nova.",
+      "esperado": "Mochila com boa capacidade"
+    },
+    {
+      "input": "Excelente produto! O aspirador de pó robô limpa perfeitamente, mapeia o apartamento em minutos e o aplicativo é muito intuitivo. Bateria dura o suficiente para cobrir meu apartamento de 80m2 com folga. Vale cada centavo do investimento.",
+      "esperado": "Aspirador robô com excelente desempenho"
+    }
+  ]
+}

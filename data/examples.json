@@ -1,0 +1,36 @@
+{
+  "classificacao_sentimento": [
+    {
+      "input": "Produto excelente, chegou antes do prazo!",
+      "output": "Sentimento: POSITIVO\nConfiança: Alta\nJustificativa: Elogio claro ao produto e à entrega."
+    },
+    {
+      "input": "Veio quebrado e o suporte não respondeu.",
+      "output": "Sentimento: NEGATIVO\nConfiança: Alta\nJustificativa: Problemas com produto e atendimento."
+    },
+    {
+      "input": "O produto chegou no prazo mas embalagem estava amassada.",
+      "output": "Sentimento: MISTO\nConfiança: Média\nJustificativa: Aspecto positivo e negativo simultâneos."
+    }
+  ],
+  "extracao_dados": [
+    {
+      "input": "Meu notebook Dell comprado há 2 dias parou de carregar. Preciso para o trabalho urgente!",
+      "output": "Produto: Notebook Dell\nProblema: Não carrega\nUrgência: ALTA\nPedido: Troca ou reparo urgente"
+    },
+    {
+      "input": "A camiseta tamanho M que comprei veio com costura solta. Gostaria de trocar.",
+      "output": "Produto: Camiseta M\nProblema: Costura solta\nUrgência: BAIXA\nPedido: Troca do produto"
+    }
+  ],
+  "sumarizacao_review": [
+    {
+      "input": "Comprei o fone de ouvido bluetooth há uma semana. O som é incrível, grave potente, mas o conforto deixa a desejar depois de 2 horas de uso. A bateria dura bem, uns 20 horas. Vale o preço, mas poderia ter almofadas melhores.",
+      "output": "1. Fone com excelente qualidade sonora e bateria duradoura (20h).\n2. Conforto é o ponto fraco; almofadas precisam de melhoria."
+    },
+    {
+      "input": "Produto chegou rápido, em 2 dias. A embalagem estava perfeita. Só que o produto em si não funciona como descrito no anúncio.",
+      "output": "1. Entrega rápida e embalagem preservada, sem danos.\n2. Produto não cumpre especificação técnica anunciada."
+    }
+  ]
+}

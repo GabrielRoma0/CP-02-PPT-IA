@@ -1,0 +1,65 @@
+tecnica,tarefa,acuracia,tokens_prompt,tokens_resposta,tokens_total,tempo_ms,resposta_resumida,esperado
+zero_shot,classificacao_sentimento,1.0,99,22,121,3652,Sentimento: POSITIVO   Confiança: Alta   Justificativa: O texto elogia,POSITIVO
+few_shot,classificacao_sentimento,1.0,261,48,309,2507,"Sentimento: POSITIVO   Confiança: Alta   Justificativa: Texto elogia o produto, ",POSITIVO
+chain_of_thought,classificacao_sentimento,1.0,166,52,218,3689,Sentimento: POSITIVO Confiança: Alta Justificativa: O texto usa elogios como “ex,POSITIVO
+role_prompting,classificacao_sentimento,1.0,237,47,284,2252,Sentimento: POSITIVO   Confiança: Alta   Justificativa: O cliente elogia o produ,POSITIVO
+zero_shot,classificacao_sentimento,1.0,107,50,157,2046,Sentimento: NEGATIVO Confiança: Alta Justificativa: O texto expressa insatisfaçã,NEGATIVO
+few_shot,classificacao_sentimento,1.0,269,40,309,2251,Sentimento: NEGATIVO Confiança: Alta Justificativa: O texto relata produto quebr,NEGATIVO
+chain_of_thought,classificacao_sentimento,1.0,174,57,231,3071,Sentimento: NEGATIVO Confiança: Alta Justificativa: O texto contém expressões ne,NEGATIVO
+role_prompting,classificacao_sentimento,1.0,245,52,297,2250,Sentimento: NEGATIVO Confiança: Alta Justificativa: O cliente relata que o produ,NEGATIVO
+zero_shot,classificacao_sentimento,1.0,105,45,150,2456,Sentimento: MISTO Confiança: Alta Justificativa: O texto combina elogio ao prazo,MISTO
+few_shot,classificacao_sentimento,1.0,267,43,310,2251,Sentimento: MISTO   Confiança: Média   Justificativa: Elogia a entrega no prazo ,MISTO
+chain_of_thought,classificacao_sentimento,0.0,172,120,292,5528,**Etapa 1 – Palavras/expressões positivas**   - “chegou no prazo” (cumprimento d,MISTO
+role_prompting,classificacao_sentimento,1.0,243,45,288,2662,Sentimento: MISTO   Confiança: Alta   Justificativa: O cliente elogia a entrega ,MISTO
+zero_shot,classificacao_sentimento,1.0,105,53,158,1635,Sentimento: POSITIVO   Confiança: Alta   Justificativa: O texto elogia a rapidez,POSITIVO
+few_shot,classificacao_sentimento,1.0,267,41,308,2048,"Sentimento: POSITIVO Confiança: Alta Justificativa: Elogio à rapidez da entrega,",POSITIVO
+chain_of_thought,classificacao_sentimento,1.0,172,203,375,4094,**Etapa 1 – Palavras/expressões positivas**   - “Entrega rápida”   - “produto ex,POSITIVO
+role_prompting,classificacao_sentimento,1.0,243,39,282,2865,Sentimento: POSITIVO Confiança: Alta Justificativa: O cliente destaca entrega rá,POSITIVO
+zero_shot,classificacao_sentimento,1.0,106,43,149,2251,Sentimento: NEGATIVO Confiança: Alta Justificativa: O texto relata uma cobrança ,NEGATIVO
+few_shot,classificacao_sentimento,1.0,268,36,304,2660,Sentimento: NEGATIVO Confiança: Alta Justificativa: Reclamação de cobrança dupli,NEGATIVO
+chain_of_thought,classificacao_sentimento,0.0,173,69,242,6963,**Etapa 1 – Palavras/expressões positivas**   Nenhuma palavra ou expressão posit,NEGATIVO
+role_prompting,classificacao_sentimento,1.0,244,46,290,2661,Sentimento: NEGATIVO   Confiança: Alta   Justificativa: O cliente relata cobranç,NEGATIVO
+zero_shot,classificacao_sentimento,1.0,103,49,152,2967,Sentimento: NEUTRO Confiança: Média Justificativa: O texto reconhece que o produ,NEUTRO
+few_shot,classificacao_sentimento,0.0,265,0,265,3173,,NEUTRO
+chain_of_thought,classificacao_sentimento,0.0,170,44,214,4505,**1. Palavras/expressões positivas**   - “ok para o preço” (indica que o produto,NEUTRO
+role_prompting,classificacao_sentimento,1.0,241,47,288,3680,Sentimento: NEUTRO   Confiança: Média   Justificativa: O cliente indica que o pr,NEUTRO
+zero_shot,extracao_dados,1.0,127,59,186,2870,Produto: Notebook Dell   Problema: O notebook parou de ligar (não liga)   Urgênc,Produto: Notebook Dell
+few_shot,extracao_dados,1.0,264,29,293,2671,Produto: Notebook Dell   Problema: Não liga   Urgência: ALTA   Pedido: Troca ou ,Produto: Notebook Dell
+chain_of_thought,extracao_dados,1.0,201,301,502,4494,**Etapa 1 – Identificação do produto**   - O cliente menciona “notebook Dell”.  ,Produto: Notebook Dell
+role_prompting,extracao_dados,1.0,252,60,312,8805,Produto: Notebook Dell   Problema: O aparelho parou de ligar.   Urgência: ALTA  ,Produto: Notebook Dell
+zero_shot,extracao_dados,1.0,126,39,165,2455,Produto: camiseta tamanho M   Problema: costura completamente solta no ombro   U,Produto: Camiseta M
+few_shot,extracao_dados,1.0,263,37,300,2866,Produto: Camiseta tamanho M   Problema: Costura completamente solta no ombro   U,Produto: Camiseta M
+chain_of_thought,extracao_dados,1.0,200,186,386,4096,**Raciocínio passo a passo**  1. **Identificação do produto**      - O cliente m,Produto: Camiseta M
+role_prompting,extracao_dados,1.0,251,42,293,2043,Produto: Camiseta (tamanho M)   Problema: Costura completamente solta no ombro  ,Produto: Camiseta M
+zero_shot,extracao_dados,1.0,124,38,162,2867,Produto: fone de ouvido bluetooth   Problema: não está pareando com nenhum dispo,Produto: Fone de ouvido bluetooth
+few_shot,extracao_dados,0.0,261,0,261,3686,,Produto: Fone de ouvido bluetooth
+chain_of_thought,extracao_dados,0.8,198,287,485,4299,**Etapa 1 – Identificação do produto**   No texto o cliente menciona “fone de ou,Produto: Fone de ouvido bluetooth
+role_prompting,extracao_dados,1.0,249,55,304,2660,Produto: Fone de ouvido Bluetooth   Problema: Não está pareando com nenhum dispo,Produto: Fone de ouvido bluetooth
+zero_shot,extracao_dados,1.0,126,54,180,3071,Produto: tênis   Problema: Recebimento do tamanho errado (enviaram tamanho 40 em,Produto: Tênis tamanho 42
+few_shot,extracao_dados,1.0,263,12,275,3277,Produto: Tênis tamanho 42   Problema,Produto: Tênis tamanho 42
+chain_of_thought,extracao_dados,1.0,200,293,493,4092,**Passo 1 – Identificar o produto**   O cliente menciona que “Comprei um **tênis,Produto: Tênis tamanho 42
+role_prompting,extracao_dados,1.0,251,62,313,5118,"Produto: Tênis (tamanho 42)   Problema: Recebeu o modelo em tamanho 40, diferent",Produto: Tênis tamanho 42
+zero_shot,extracao_dados,0.0,127,0,127,4503,,Produto: Cafeteira Nespresso
+few_shot,extracao_dados,1.0,264,33,297,3072,Produto: Cafeteira Nespresso   Problema: Parou de funcionar após 1 mês de uso   ,Produto: Cafeteira Nespresso
+chain_of_thought,extracao_dados,1.0,201,300,501,8395,**Etapa 1 – Identificar o produto**   No texto o cliente menciona “cafeteira Nes,Produto: Cafeteira Nespresso
+role_prompting,extracao_dados,1.0,252,44,296,2455,Produto: Cafeteira Nespresso   Problema: Parou de funcionar após 1 mês de uso.  ,Produto: Cafeteira Nespresso
+zero_shot,sumarizacao_review,0.6,157,75,232,2866,"Resumo: 1. O fone oferece som de alta qualidade, com graves potentes, agudos bem",Fone com excelente qualidade sonora
+few_shot,sumarizacao_review,0.4,362,51,413,3480,"Resumo: 1. Som excelente com graves potentes, agudos claros e bateria de 20 h co",Fone com excelente qualidade sonora
+chain_of_thought,sumarizacao_review,0.2,237,77,314,3890,**Passo a passo**  1. **Aspecto mais positivo mencionado**      - Qualidade do s,Fone com excelente qualidade sonora
+role_prompting,sumarizacao_review,0.4,271,16,287,3479,Resumo: 1. O fone entrega som potente com graves fortes,Fone com excelente qualidade sonora
+zero_shot,sumarizacao_review,0.5,153,49,202,3276,Resumo: 1. A entrega chegou em 2 dias úteis com embalagem perfeita.   2. O filtr,Entrega rápida
+few_shot,sumarizacao_review,0.5,358,62,420,3479,Resumo: 1. Entrega em 2 dias úteis com embalagem impecável.   2. O filtro não cu,Entrega rápida
+chain_of_thought,sumarizacao_review,1.0,233,171,404,3890,**Passo a passo**  1. **Aspecto mais positivo:** entrega em 2 dias úteis e embal,Entrega rápida
+role_prompting,sumarizacao_review,1.0,267,69,336,2455,Resumo: 1. A entrega foi rápida (2 dias úteis) e a embalagem chegou em perfeitas,Entrega rápida
+zero_shot,sumarizacao_review,0.67,145,36,181,3275,"Resumo:   1. A TV chegou bem embalada, tem imagem 4K com cores vibrantes e o And",Smart TV com excelente imagem 4K
+few_shot,sumarizacao_review,0.5,350,49,399,2565,"Resumo: 1. TV chegou bem embalada, oferece imagem 4K vibrante e Android TV rápid",Smart TV com excelente imagem 4K
+chain_of_thought,sumarizacao_review,1.0,225,237,462,4600,**Passo 1 – Identificar o aspecto mais positivo mencionado**   - A qualidade de ,Smart TV com excelente imagem 4K
+role_prompting,sumarizacao_review,0.0,259,0,259,3071,,Smart TV com excelente imagem 4K
+zero_shot,sumarizacao_review,0.0,140,0,140,3071,,Mochila com boa capacidade
+few_shot,sumarizacao_review,0.75,345,56,401,3480,"Resumo: 1. Mochila tem boa capacidade, mas o zíper travou após apenas 3 usos. 2.",Mochila com boa capacidade
+chain_of_thought,sumarizacao_review,1.0,220,211,431,5528,**Passo 1 – Aspecto mais positivo**   - O cliente elogia a capacidade da mochila,Mochila com boa capacidade
+role_prompting,sumarizacao_review,0.75,254,19,273,2251,Resumo: 1. A mochila oferece boa capacidade e o atendimento foi,Mochila com boa capacidade
+zero_shot,sumarizacao_review,0.6,136,60,196,2864,"Resumo: 1. O aspirador robô limpa perfeitamente, mapeia o apartamento em minutos",Aspirador robô com excelente desempenho
+few_shot,sumarizacao_review,0.4,341,49,390,3481,"Resumo: 1. O aspirador robô limpa perfeitamente, mapeia o apartamento em minutos",Aspirador robô com excelente desempenho
+chain_of_thought,sumarizacao_review,0.4,216,147,363,4094,**Passo a passo**  1. **Aspecto mais positivo mencionado**      - O aspirador li,Aspirador robô com excelente desempenho
+role_prompting,sumarizacao_review,0.6,250,67,317,2455,"Resumo: 1. O robô aspira perfeitamente, mapeia o apartamento em minutos e o app ",Aspirador robô com excelente desempenho

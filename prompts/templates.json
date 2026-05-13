@@ -1,0 +1,20 @@
+{
+  "classificacao_sentimento": {
+    "zero_shot": "Classifique o sentimento do texto como POSITIVO, NEGATIVO, NEUTRO ou MISTO.\nResponda APENAS com:\nSentimento: [POSITIVO/NEGATIVO/NEUTRO/MISTO]\nConfiança: [Alta/Média/Baixa]\nJustificativa: [1 frase]",
+    "few_shot": "Com base nos exemplos fornecidos, classifique o sentimento do texto.",
+    "cot": "Analise o texto passo a passo e classifique o sentimento.",
+    "role": "Analise o sentimento como especialista em Customer Experience."
+  },
+  "extracao_dados": {
+    "zero_shot": "Extraia as informações estruturadas do texto de reclamação.",
+    "few_shot": "Com base nos exemplos, extraia as informações do texto.",
+    "cot": "Analise o texto passo a passo e extraia os dados.",
+    "role": "Como especialista de suporte, extraia as informações do ticket."
+  },
+  "sumarizacao_review": {
+    "zero_shot": "Resuma o review em exatamente 2 frases.",
+    "few_shot": "Com base nos exemplos, resuma o review em 2 frases.",
+    "cot": "Analise o review passo a passo e produza um resumo de 2 frases.",
+    "role": "Como analista de produto, resuma o review em 2 frases executivas."
+  }
+}
