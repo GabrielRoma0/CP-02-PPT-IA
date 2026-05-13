@@ -1,4 +1,4 @@
-# 🐍 Prompt Toolkit — Checkpoint 02
+# Prompt Toolkit — Checkpoint 02
 
 **Disciplina:** Prompt Engineering and Artificial Intelligence  
 **Instituição:** FIAP — Ciência da Computação · 2026  
@@ -6,8 +6,18 @@
 **Domínio:** Atendimento ao Cliente (e-commerce)
 
 ---
+##  Participantes
 
-## 📋 O que é este projeto?
+| Nome                     | RM     |
+|--------------------------|--------|
+| Fernando Hideki Rosa Oda | 571408 |
+| Gabriel Botelho Romão    | 570589 |
+| Léo Moreno Sambo         | 569556 |
+| Thor Ferreira Camargo    | 569543 |
+
+---
+
+##  O que é este projeto?
 
 Toolkit Python que aplica automaticamente as **4 técnicas de prompting** a qualquer tarefa de negócio, compara resultados e recomenda a melhor abordagem.
 
@@ -24,7 +34,7 @@ Toolkit Python que aplica automaticamente as **4 técnicas de prompting** a qual
 
 ---
 
-## ⚙️ Stack
+##  Stack
 
 | Componente | Tecnologia |
 |-----------|-----------|
@@ -36,7 +46,7 @@ Toolkit Python que aplica automaticamente as **4 técnicas de prompting** a qual
 
 ---
 
-## 🚀 Como instalar e executar
+##  Como instalar e executar
 
 ### 1. Clone ou descompacte o projeto
 
@@ -63,13 +73,6 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Configure as variáveis de ambiente
-
-```bash
-cp .env.example .env
-# Edite o .env com sua OLLAMA_API_KEY
-```
-
 ### 5. Execute o toolkit
 
 ```bash
@@ -78,7 +81,7 @@ python main.py
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 prompt-toolkit/
@@ -109,7 +112,7 @@ prompt-toolkit/
 
 ---
 
-## 📊 Saídas geradas
+##  Saídas geradas
 
 | Arquivo | Descrição |
 |---------|-----------|
@@ -120,7 +123,7 @@ prompt-toolkit/
 
 ---
 
-## 🎭 Personas (Aula 07)
+## Personas (Aula 07)
 
 | Persona | Nome | Tarefa | Temperatura |
 |---------|------|--------|-------------|
@@ -130,7 +133,7 @@ prompt-toolkit/
 
 ---
 
-## 📚 Referências das Aulas
+## Referências das Aulas
 
 - **Aula 05** — Anatomia do prompt (`prompt_builder.py`)
 - **Aula 06** — Zero-Shot, Few-Shot, Chain-of-Thought (`techniques.py`)
