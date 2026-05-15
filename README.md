@@ -48,10 +48,9 @@ Toolkit Python que aplica automaticamente as **4 técnicas de prompting** a qual
 
 ##  Como instalar e executar
 
-### 1. Clone ou descompacte o projeto
-
+### 1. Clone o projeto
+### 1.1. Entre no diretório do trabalho
 ```bash
-unzip CP02_NomeDoGrupo.zip
 cd prompt-toolkit
 ```
 
